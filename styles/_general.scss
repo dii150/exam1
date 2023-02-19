@@ -1,0 +1,64 @@
+@use "variables";
+
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 7px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-image: -webkit-gradient(linear,
+          left bottom,
+          left top,
+          color-stop(0.44, rgb(122,153,217)),
+          color-stop(0.62, rgba(83, 115, 253, 1)),
+          color-stop(0.76, rgb(28,58,148)));
+}
+/*
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: variables.$accent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(97, 127, 248);
+}*/
